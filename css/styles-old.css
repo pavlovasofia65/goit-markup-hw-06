@@ -1,0 +1,54 @@
+/* #region THIRD SECTION */
+
+.team-list {
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    height: 100%;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+
+/* #third .our-team .container {
+    gap: 24px;
+} */
+
+/* .second-header-team {
+    align-self: start;
+}
+
+.team-container {
+    display: block;
+} */
+
+
+/* #endregion THIRD SECTION */
+
+/* #region FOOTER */
+
+.footer {
+    padding: 100px 0;
+}
+
+.accent-header {
+    color: #2e2f42;
+}
+
+.footer-container {
+    display: block;
+    width: 264px;
+    margin-left: 0;
+    margin-right: 120px;
+}
+
+.footer-div {
+    align-items: baseline;
+}
+
+.mail-input-div {
+    margin-left: auto;
+}
+/* #endregion FOOTER */
+

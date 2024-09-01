@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,18 +26,21 @@
 
 
     <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./css/media.css"/>
 </head>
+
 <body>
   <header class="header">
     <div class="container">
         <nav class="nav">
-              <a href="./index.html" class="logo-header">Web<span class="accent-header">Studio</span></a>
-              <ul class="menu nav-menu">
+          <a href="./index.html" class="logo-header">Web<span class="accent-header">Studio</span></a>
+          <ul class="menu nav-menu">
                 <li class="first-link"><a href="./index.html" class="menu-link studio">Studio</a></li>
                 <li class="first-link"><a href="" class="menu-link">Portfolio</a></li>
                 <li class="first-link"><a href="" class="menu-link">Contacts</a></li>
-              </ul>
-          </nav>
+          </ul>
+        </nav>
+
       <address class="address">
           <ul class="address-list">
             <li class="li-contacts">
@@ -46,12 +50,81 @@
             </li>
           </ul>
       </address>
+
+      <button class="burger" type="button">
+        <svg class="icon-burger" width="24" height="24">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
     </div>
+
+    <div class="mobile-menu">
+    <div class="container mobile-menu-container">
+      <button class="modal-button" type="button">
+        <svg class="btn-icon" width="8" height="8">
+        <use href="./images/icons.svg#icon-x-close"></use>
+      </svg>
+      </button>
+      <nav class="mobile-menu-nav">
+        <ul class="mobile-menu-nav-ul">
+          <li class="first-link-menu"><a href="./index.html" class="mob-menu-link studio">Studio</a>
+          </li>
+          <li class="irst-link-menu"><a href="" class="mob-menu-link">Portfolio</a>
+          </li>
+          <li class="first-link-menu last-link-menu"><a href="" class="mob-menu-link">Contacts</a>
+          </li>
+    </ul>
+      </nav>
+
+      <address class="address-menu">
+        <ul class="address-list-menu">
+          <li class="li-contacts-menu">
+            <a href="mailto:info@devstudio.com" class="contacts-menu">info@devstudio.com</a></li>
+          <li class="li-contacts-menu">
+            <a href="tel:+110001111111" class="contacts-menu">+11 (000) 111-11-11</a>
+          </li>
+        </ul>
+    </address>
+
+    <ul class="social-media-list-menu">
+      <li class="social-media-li-footer">
+        <a href="" class="social-media-link social-media-link-footer">
+          <svg class="social-media-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-media-li-footer">
+        <a href="" class="social-media-link social-media-link-footer">
+          <svg class="social-media-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-media-li-footer">
+        <a href="" class="social-media-link social-media-link-footer">
+          <svg class="social-media-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-media-li-footer">
+        <a href="" class="social-media-link social-media-link-footer">
+          <svg class="social-media-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-linkedin"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+    </div>
+  </div>
   </header>   
 
+  
 <main>
 
-  <!-- first section -->
+  <!-- FIRST SECTION -->
   
 <section class="section" id="first">
   <div class="container first-container">
@@ -61,7 +134,7 @@
   </div>
 </section> 
 
-<!-- second section -->
+<!-- SECOND SECTION -->
 
 <section class="section" id="features">
   <div class="container">
@@ -116,7 +189,7 @@
       </div>
 </section>
 
-<!-- third section -->
+<!-- THIRD SECTION -->
 
 <section class="section" id="third">
   
@@ -124,7 +197,7 @@
     <h2 class="second-header second-header-team">Our Team</h2>
       <ul class="our-team">
           <li class="team-list">
-              <img src="./images/1.jpg" alt="Mark Guerrero" width="264"/>
+              <img src="./images/1.jpg" alt="Mark Guerrero" width="264" srcset="./images/1.jpg 1x, ./images/sec-3-1@2x.jpg 2x"/>
               <div class="div-team">
                 <h3 class="third-header">Mark Guerrero</h3>
                 <p class="paragraf">Product Designer</p>
@@ -161,7 +234,7 @@
               </div>
           </li>
           <li class="team-list">
-              <img src="./images/2.jpg" alt="Tom Ford" width="264"/>
+              <img src="./images/2.jpg" alt="Tom Ford" width="264" srcset="./images/2.jpg 1x, ./images/sec-3-2@2x.jpg 2x"/>
               <div class="div-team">
                 <h3 class="third-header">Tom Ford</h3>
                 <p class="paragraf">Frontend Developer</p>
@@ -198,7 +271,7 @@
               </div>
           </li>
           <li class="team-list">
-              <img src="./images/3.jpg" alt="Camila Garcia" width="264"/>
+              <img src="./images/3.jpg" alt="Camila Garcia" width="264" srcset="./images/3.jpg 1x, ./images/sec-3-3@2x.jpg 2x"/>
               <div class="div-team">
                 <h3 class="third-header">Camila Garcia</h3>
                 <p class="paragraf">Marketing</p>
@@ -235,7 +308,7 @@
               </div>
           </li>
           <li class="team-list">
-              <img src="./images/4.jpg" alt="Daniel Wilson" width="264"/>
+              <img src="./images/4.jpg" alt="Daniel Wilson" width="264" srcset="./images/4.jpg 1x, ./images/sec-3-4@2x.jpg 2x"/>
               <div class="div-team">
                 <h3 class="third-header">Daniel Wilson</h3>
                 <p class="paragraf">UI Designer</p>
@@ -275,7 +348,7 @@
       </div>
 </section>
 
-<!-- fourth section -->
+<!-- FOURTH SECTION -->
 
   <section class="section" id="fourth">
   <div class="container portfolio-container">
@@ -283,7 +356,8 @@
     <ul class="portfolio">
         <li class="fourth-section-list">
         <div class="overlay-div">
-          <img src="./images/21.jpg" alt="Banking App" width="360">
+          <img src="./images/4-sec-mob/4-sec-mob-1.jpg" alt="Banking App" width="360"
+          srcset="./images/4-sec-mob/4-sec-mob-1.jpg 1x, ./images/4-sec-mob/4-sec-mob-1@2x.jpg 2x">
             <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
             </p>
         </div>
@@ -294,7 +368,8 @@
         </li>
         <li class="fourth-section-list">
         <div class="overlay-div">
-          <img src="./images/22.jpg" alt="Cashless Payment" width="360">
+          <img src="./images/4-sec-mob/4-sec-mob-2.jpg" alt="Cashless Payment" width="360"
+          srcset="./images/4-sec-mob/4-sec-mob-2.jpg 1x, ./images/4-sec-mob/4-sec-mob-2@2x.jpg 2x">
               <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
               </p>
           </div>
@@ -305,7 +380,8 @@
         </li>
         <li class="fourth-section-list">
         <div class="overlay-div">
-          <img src="./images/23.jpg" alt="Meditation App" width="360">
+          <img src="./images/4-sec-mob/4-sec-mob-3.jpg" alt="Cashless Payment" width="360"
+          srcset="./images/4-sec-mob/4-sec-mob-3.jpg 1x, ./images/4-sec-mob/4-sec-mob-3@2x.jpg 2x">
               <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
               </p>
         </div>
@@ -316,7 +392,8 @@
         </li>
         <li class="fourth-section-list">
         <div class="overlay-div">
-          <img src="./images/24.jpg" alt="Taxi Service" width="360">
+          <img src="./images/4-sec-mob/4-sec-mob-4.jpg" alt="Cashless Payment" width="360"
+          srcset="./images/4-sec-mob/4-sec-mob-4.jpg 1x, ./images/4-sec-mob/4-sec-mob-4@2x.jpg 2x">
               <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
               </p>
         </div>
@@ -327,7 +404,8 @@
         </li>
         <li class="fourth-section-list">
         <div class="overlay-div">
-          <img src="./images/25.jpg" alt="Screen Illustrations" width="360">
+          <img src="./images/4-sec-mob/4-sec-mob-5.jpg" alt="Cashless Payment" width="360"
+          srcset="./images/4-sec-mob/4-sec-mob-5.jpg 1x, ./images/4-sec-mob/4-sec-mob-5@2x.jpg 2x">
               <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
               </p>
         </div>
@@ -339,7 +417,8 @@
       
         <li class="fourth-section-list">
         <div class="overlay-div">
-          <img src="./images/26.jpg" alt="Online Courses" width="360">
+          <img src="./images/4-sec-mob/4-sec-mob-6.jpg" alt="Cashless Payment" width="360"
+          srcset="./images/4-sec-mob/4-sec-mob-6.jpg 1x, ./images/4-sec-mob/4-sec-mob-6@2x.jpg 2x">
               <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
               </p>
         </div>
@@ -351,12 +430,14 @@
       </ul>
     </div>
   </section>
- </main>
 
-<!-- footer -->
+</main>
 
- <footer class="footer">
+<!-- FOOTER -->
+
+  <footer class="footer">
     <div class="footer-div container">
+      
       <div class="footer-container">
         <a href="./index.html" class="logo-footer">Web<span class="accent">Studio</span></a>
         <p class="footer-paragraf">
@@ -416,9 +497,9 @@
     </div>
  </footer>
 
-<!-- modal -->
+<!-- MODAL -->
 
- <div class="backdrop">
+ <!-- <div class="backdrop is-open">
   <div class="modal">
     <button class="modal-button" type="button">
       <svg class="btn-icon" width="8" height="8">
@@ -474,8 +555,10 @@
               <use href="./images/icons.svg#icon-checkbox"></use>
             </svg>
           </span>
-        I accept the terms and conditions of the 
-        <a href="#" class="checkbox-link">Privacy Policy</a>
+        <span class="checkbox-text">
+          I accept the terms and conditions of the
+          <a href="#" class="checkbox-link">Privacy Policy</a>
+        </span>
       </label>
     </div>
 
@@ -484,7 +567,7 @@
 
     </form>
   </div>
- </div>
+ </div> -->
 
  <script src="./js/modal.js"></script>
 </body>
